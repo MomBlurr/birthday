@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- https://www.youtube.com/watch?v=o92o8yuyiUo&list=RDo92o8yuyiUo&start_radio=1 -->
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h1>Countdown!</h1>
+                <p>Time remaining until your Birthday</p>
+            </div>
+            
+            <div class="countdown-display">
+                <!-- Add this days section -->
+                <div class="time-unit">
+                    <span id="days" class="time-value">00</span>
+                    <span class="time-label">Days</span>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-unit">
+                    <span id="hours" class="time-value">00</span>
+                    <span class="time-label">Hours</span>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-unit">
+                    <span id="minutes" class="time-value">00</span>
+                    <span class="time-label">Minutes</span>
+                </div>
+                <div class="time-separator">:</div>
+                <div class="time-unit">
+                    <span id="seconds" class="time-value">00</span>
+                    <span class="time-label">Seconds</span>
+                </div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div id="progressFill" class="progress-fill"></div>
+                </div>
+            </div>
+            
+            <div class="status-info">
+                <p>Birthday Count Down</p>
+            </div>
+
+            <!-- Test Button (Only visible for admin) -->
+            <div id="testSection" class="test-section" style="display: none;">
+                <div class="test-controls">
+                    <button id="testButton" class="test-btn">Test Countdown (5 seconds)</button>
+                    <button id="instantButton" class="test-btn instant">Show Message Now</button>
+                </div>
+                <p class="test-note">Admin testing mode active</p>
+            </div>
+        </div>
+    </div>
+    <script src="countdown.js"></script>
+</body>
+</html>

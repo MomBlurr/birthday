@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a2a6c, #2a3a7c);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #2c3e50;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #7f8c8d;
+    font-size: 16px;
+}
+
+/* Form Styles */
+.form {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 24px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e1e8ed;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #3498db;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #2980b9;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ecf0f1;
+}
+
+.footer p {
+    color: #95a5a6;
+    font-size: 14px;
+}
+
+/* Countdown Styles */
+.countdown-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    gap: 8px;
+}
+
+.time-unit {
+    text-align: center;
+    min-width: 80px;
+}
+
+.time-value {
+    display: block;
+    font-size: 42px;
+    font-weight: 300;
+    color: #2c3e50;
+    font-variant-numeric: tabular-nums;
+}
+
+.time-label {
+    display: block;
+    font-size: 12px;
+    color: #7f8c8d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.time-separator {
+    font-size: 32px;
+    color: #bdc3c7;
+    margin: 0 2px;
+    padding-bottom: 20px;
+}
+
+/* Progress Bar */
+.progress-container {
+    margin: 30px 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background: #ecf0f1;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+    width: 0%;
+    transition: width 1s linear;
+}
+
+.status-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.status-info p {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+/* Message Page Styles */
+.message-card {
+    text-align: center;
+}
+
+.message-content {
+    margin: 30px 0;
+}
+
+.message-text p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #2c3e50;
+    line-height: 1.8;
+}
+
+.message-text p:first-child {
+    font-size: 24px;
+    font-weight: 600;
+    color: #e74c3c;
+}
+
+.signature {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #ecf0f1;
+}
+
+.signature p {
+    color: #7f8c8d;
+    margin-bottom: 5px;
+}
+
+.signature-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Test Section Styles */
+.test-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ecf0f1;
+}
+
+.test-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.test-btn {
+    padding: 12px 20px;
+    background: #95a5a6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.test-btn:hover {
+    background: #7f8c8d;
+    transform: translateY(-1px);
+}
+
+.test-btn.instant {
+    background: #e74c3c;
+}
+
+.test-btn.instant:hover {
+    background: #c0392b;
+}
+
+.test-note {
+    text-align: center;
+    color: #95a5a6;
+    font-size: 12px;
+    font-style: italic;
+}
+
+/* Error State */
+.input-error {
+    border-color: #e74c3c !important;
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card {
+        padding: 30px 20px;
+    }
+    
+    .time-unit {
+        min-width: 70px;
+    }
+    
+    .time-value {
+        font-size: 32px;
+    }
+    
+    .time-separator {
+        font-size: 24px;
+        padding-bottom: 15px;
+    }
+    
+    .time-label {
+        font-size: 10px;
+    }
+    
+    .message-text p {
+        font-size: 16px;
+    }
+    
+    .message-text p:first-child {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .countdown-display {
+        gap: 3px;
+    }
+    
+    .time-unit {
+        min-width: 60px;
+    }
+    
+    .time-value {
+        font-size: 28px;
+    }
+    
+    .time-separator {
+        font-size: 20px;
+        padding-bottom: 12px;
+    }
+    
+    .time-label {
+        font-size: 9px;
+    }
+}
+
+/* hhhhsidfhsdi */
+/* Add these to your existing CSS */
+
+/* Music Controls */
+.music-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.music-btn {
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(52, 152, 219, 0.3);
+}
+
+.music-btn:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+}
+
+/* Celebration effects */
+.confetti {
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    background-color: #f0f;
+    opacity: 0;
+    animation: confetti-fall 5s linear forwards;
+    z-index: 1000;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Pulse animation for celebration */
+@keyframes celebrate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.celebrating {
+    animation: celebrate 2s ease-in-out infinite;
+}
